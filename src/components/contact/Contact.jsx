@@ -5,8 +5,12 @@ import msg_icon from "../../assets/msg-icon.png"
 import mail_icon from "../../assets/mail-icon.png"
 import phone_icon from "../../assets/phone-icon.png"
 import location_icon from "../../assets/location-icon.png"
+import white_arrow from "../../assets/white-arrow.png"
 
 const Contact = () => {
+    const handleClick = () => {
+
+    }
     return (
         <div className='contact'>
             <div className="contact-col">
@@ -18,7 +22,17 @@ const Contact = () => {
                     <li><img src={location_icon} alt="" />Dhungedhara Nursery Chowk <br />Kathmandu Nepal</li>
                 </ul>
             </div>
-
+            <div className="contact-col">
+                <form>
+                    <label htmlFor="">Your Name</label>
+                    <input type="text" name="name" placeholder='Enter your name' required />
+                    <label htmlFor="">Phone Number</label>
+                    <input type="tel" name='phone' placeholder='Enter your mobile number' required />
+                    <label htmlFor="">Write your message here</label>
+                    <textarea name="message" rows={6} placeholder='Enter your message here' id="" required></textarea>
+                    <button type='submit' className='btn dark-btn' onClick={handleClick}>Submit now <img src={white_arrow} alt="" /></button>
+                </form>
+            </div>
         </div>
     )
 }
