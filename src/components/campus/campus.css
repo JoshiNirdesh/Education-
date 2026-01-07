@@ -21,3 +21,14 @@
     color: #fff;
 
 }
+
+@media (max-width:800px) {
+    .gallery {
+        flex-wrap: wrap;
+    }
+
+    .gallery img {
+        width: 48px;
+        margin-bottom: 25px;
+    }
+}

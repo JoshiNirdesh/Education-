@@ -59,3 +59,13 @@
     display: block;
     margin: 20px 0px;
 }
+
+@media (max-widht:700px) {
+    .contact {
+        display: block;
+    }
+
+    .contact-col {
+        padding: 20px;
+    }
+}
